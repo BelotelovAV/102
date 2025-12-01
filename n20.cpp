@@ -36,7 +36,7 @@ double averageUniqueSegments(ifstream& f) {
     while (f >> current) {
         if (current != previous) {
             sum += current;
-            count++;
+            ++count;
             previous = current;
         }
     }

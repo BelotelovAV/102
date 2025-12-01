@@ -32,7 +32,7 @@ int countMinElements(ifstream& f) {
             minValue = number;
             count = 1;
         } else if (number == minValue) {
-            count++;
+            ++count;
         }
     }
     

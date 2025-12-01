@@ -31,18 +31,18 @@ void removeNegatives(ifstream& f) {
     }
     
     int j = 0;
-    for (int i = 0; i < count; i++) {
+    for (int i = 0; i < count; ++i) {
         if (numbers[i] >= 0) {
             swap(numbers[i], numbers[j]);
-            j++;
+            ++j;
         }
     }
     
-    for (int i = j; i < count; i++) {
+    for (int i = j; i < count; ++i) {
         numbers[i] = 0;
     }
     
-    for (int i = 0; i < count; i++) {
+    for (int i = 0; i < count; ++i) {
         cout << numbers[i] << " ";
     }
     cout << endl;

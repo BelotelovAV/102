@@ -30,7 +30,7 @@ void reverseArray(ifstream& f) {
     }
     
     // Выводим элементы в обратном порядке
-    for (int i = numbers.size() - 1; i >= 0; i--) {
+    for (int i = numbers.size() - 1; i >= 0; --i) {
         cout << numbers[i] << " ";
     }
     cout << endl;

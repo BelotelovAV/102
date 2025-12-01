@@ -31,8 +31,8 @@ void sortArray(ifstream& f) {
     }
     
     // Сортировка пузырьком
-    for (int i = 0; i < count - 1; i++) {
-        for (int j = 0; j < count - i - 1; j++) {
+    for (int i = 0; i < count - 1; ++i) {
+        for (int j = 0; j < count - i - 1; ++j) {
             if (numbers[j] > numbers[j + 1]) {
                 swap(numbers[j], numbers[j + 1]);
             }
@@ -40,7 +40,7 @@ void sortArray(ifstream& f) {
     }
     
     // Выводим отсортированный массив
-    for (int i = 0; i < count; i++) {
+    for (int i = 0; i < count; ++i) {
         cout << numbers[i] << " ";
     }
     cout << endl;
